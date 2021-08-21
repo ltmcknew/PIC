@@ -1,0 +1,1921 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F47K42 ]
+[d frameptr 16353 ]
+"17 /home/dev-user/Projects/Personal/PIC/StepperSystem_v2.X/System.c
+[e E16361 . `c
+STAT_FAIL -2
+STAT_ERR -1
+STAT_SUCCESS 0
+STAT_IDLE 1
+]
+"27 /home/dev-user/Projects/Personal/PIC/StepperSystem_v2.X/interrupts.c
+[e E16361 . `c
+STAT_FAIL -2
+STAT_ERR -1
+STAT_SUCCESS 0
+STAT_IDLE 1
+]
+"15 /home/dev-user/Projects/Personal/PIC/StepperSystem_v2.X/main.c
+[e E16361 . `c
+STAT_FAIL -2
+STAT_ERR -1
+STAT_SUCCESS 0
+STAT_IDLE 1
+]
+"4 /home/dev-user/Projects/Personal/PIC/LibOutputDevices.X/disp_7seg4dig.c
+[e E16287 . `c
+STAT_FAIL -2
+STAT_ERR -1
+STAT_SUCCESS 0
+STAT_IDLE 1
+]
+"4 /home/dev-user/Projects/Personal/PIC/LibOutputDevices.X/stepper.c
+[e E16287 . `c
+STAT_FAIL -2
+STAT_ERR -1
+STAT_SUCCESS 0
+STAT_IDLE 1
+]
+"49 /home/dev-user/Projects/Personal/PIC/LibPeripherals.X/timers.c
+[e E16287 . `c
+STAT_FAIL -2
+STAT_ERR -1
+STAT_SUCCESS 0
+STAT_IDLE 1
+]
+"4 /home/dev-user/Projects/Personal/PIC/LibPeripherals.X/uart.c
+[e E16287 . `c
+STAT_FAIL -2
+STAT_ERR -1
+STAT_SUCCESS 0
+STAT_IDLE 1
+]
+"13 /home/dev-user/Projects/Personal/PIC/LibMisc.X/IOExp_PCA9539A.c
+[e E16287 . `c
+STAT_FAIL -2
+STAT_ERR -1
+STAT_SUCCESS 0
+STAT_IDLE 1
+]
+"79
+[e E16387 IOEXP_PORTENUM `uc
+P0 0
+P1 1
+BOTH 2
+]
+"4 /home/dev-user/Projects/Personal/PIC/LibPeripherals.X/i2c.c
+[e E16287 . `c
+STAT_FAIL -2
+STAT_ERR -1
+STAT_SUCCESS 0
+STAT_IDLE 1
+]
+"13 /home/dev-user/Projects/Personal/PIC/LibMisc.X/IOExp_PCA9539A.c
+[v _IOExpSetup IOExpSetup `(E16361  1 e 1 0 ]
+"77
+[v _IOExpUpdateAll IOExpUpdateAll `(E16361  1 e 1 0 ]
+"102
+[v _IOExpUpdateOutPart IOExpUpdateOutPart `(E16287  1 e 1 0 ]
+[v i2_IOExpUpdateOutPart IOExpUpdateOutPart `(E16287  1 e 1 0 ]
+"119
+[v _IOExpWriteDir IOExpWriteDir `(E16287  1 e 1 0 ]
+"155
+[v _IOExpWriteInv IOExpWriteInv `(E16287  1 e 1 0 ]
+"191
+[v _IOExpWriteVal IOExpWriteVal `(E16287  1 e 1 0 ]
+[v i2_IOExpWriteVal IOExpWriteVal `(E16287  1 e 1 0 ]
+"293
+[v _IOExpReadIVal IOExpReadIVal `(E16287  1 e 1 0 ]
+"4 /home/dev-user/Projects/Personal/PIC/LibOutputDevices.X/disp_7seg4dig.c
+[v _setupDisp setupDisp `(E16361  1 e 1 0 ]
+"30
+[v _updateDispVal updateDispVal `(E16287  1 e 1 0 ]
+"112
+[v _updateDispValHex updateDispValHex `(E16361  1 e 1 0 ]
+"191
+[v _updateDisp updateDisp `(E16361  1 e 1 0 ]
+"4 /home/dev-user/Projects/Personal/PIC/LibOutputDevices.X/stepper.c
+[v _setupStepper0 setupStepper0 `(E16361  1 e 1 0 ]
+"30
+[v _stepper0ISR stepper0ISR `IIH(v  1 e 1 0 ]
+"50
+[v _stepSMachine0 stepSMachine0 `(E16361  1 e 1 0 ]
+"58
+[v _stepMotorSM0 stepMotorSM0 `(E16287  1 e 1 0 ]
+"151
+[v _updateStepState0 updateStepState0 `(E16287  1 e 1 0 ]
+"173
+[v _stepMotor0 stepMotor0 `(E16287  1 e 1 0 ]
+"217
+[v _setupStepper1 setupStepper1 `(E16361  1 e 1 0 ]
+"243
+[v _stepper1ISR stepper1ISR `IIH(v  1 e 1 0 ]
+"263
+[v _stepSMachine1 stepSMachine1 `(E16361  1 e 1 0 ]
+"271
+[v _stepMotorSM1 stepMotorSM1 `(E16287  1 e 1 0 ]
+"365
+[v _updateStepState1 updateStepState1 `(E16287  1 e 1 0 ]
+"387
+[v _stepMotor1 stepMotor1 `(E16287  1 e 1 0 ]
+"428
+[v _setupStepper2 setupStepper2 `(E16361  1 e 1 0 ]
+"454
+[v _stepper2ISR stepper2ISR `IIH(v  1 e 1 0 ]
+"476
+[v _stepSMachine2 stepSMachine2 `(E16361  1 e 1 0 ]
+"484
+[v _stepMotorSM2 stepMotorSM2 `(E16287  1 e 1 0 ]
+"577
+[v _updateStepState2 updateStepState2 `(E16287  1 e 1 0 ]
+"599
+[v _stepMotor2 stepMotor2 `(E16287  1 e 1 0 ]
+"632
+[v _outputUpdate outputUpdate `(E16287  1 e 1 0 ]
+[v i2_outputUpdate outputUpdate `(E16287  1 e 1 0 ]
+"4 /home/dev-user/Projects/Personal/PIC/LibPeripherals.X/i2c.c
+[v _I2C1Setup I2C1Setup `(E16287  1 e 1 0 ]
+"36
+[v _I2C1Enable I2C1Enable `(E16287  1 e 1 0 ]
+"46
+[v _I2C1Disable I2C1Disable `(E16287  1 e 1 0 ]
+"53
+[v _I2C1Write I2C1Write `(uc  1 e 1 0 ]
+[v i2_I2C1Write I2C1Write `(uc  1 e 1 0 ]
+"91
+[v _I2C1WrRd I2C1WrRd `(uc  1 e 1 0 ]
+"49 /home/dev-user/Projects/Personal/PIC/LibPeripherals.X/timers.c
+[v _Tmr1Setup Tmr1Setup `(E16287  1 e 1 0 ]
+"83
+[v _Tmr1Enable Tmr1Enable `(v  1 e 1 0 ]
+"88
+[v _Tmr1Disable Tmr1Disable `(v  1 e 1 0 ]
+"95
+[v _Tmr3Setup Tmr3Setup `(E16287  1 e 1 0 ]
+"129
+[v _Tmr3Enable Tmr3Enable `(v  1 e 1 0 ]
+"134
+[v _Tmr3Disable Tmr3Disable `(v  1 e 1 0 ]
+"141
+[v _Tmr5Setup Tmr5Setup `(E16287  1 e 1 0 ]
+"175
+[v _Tmr5Enable Tmr5Enable `(v  1 e 1 0 ]
+"180
+[v _Tmr5Disable Tmr5Disable `(v  1 e 1 0 ]
+"231
+[v _Tmr4Setup Tmr4Setup `(E16361  1 e 1 0 ]
+"260
+[v _Tmr4Enable Tmr4Enable `(v  1 e 1 0 ]
+"265
+[v _Tmr4Disable Tmr4Disable `(v  1 e 1 0 ]
+"272
+[v _Tmr6Setup Tmr6Setup `(E16287  1 e 1 0 ]
+"301
+[v _Tmr6Enable Tmr6Enable `(v  1 e 1 0 ]
+"306
+[v _Tmr6Disable Tmr6Disable `(v  1 e 1 0 ]
+"353
+[v _TmrDisable TmrDisable `(v  1 e 1 0 ]
+"4 /home/dev-user/Projects/Personal/PIC/LibPeripherals.X/uart.c
+[v _UART1Setup UART1Setup `(E16361  1 e 1 0 ]
+"91
+[v _uart1_tx_str uart1_tx_str `(E16287  1 e 1 0 ]
+"118
+[v _uart1_tx_str_crlf uart1_tx_str_crlf `(E16361  1 e 1 0 ]
+"17 /home/dev-user/Projects/Personal/PIC/StepperSystem_v2.X/interrupts.c
+[v _TMR4_ISR TMR4_ISR `IIH(v  1 e 1 0 ]
+"38
+[v _TX_ISR TX_ISR `IIL(v  1 e 1 0 ]
+"50
+[v _RX_ISR RX_ISR `IIL(v  1 e 1 0 ]
+"95
+[v _DEFAULT_ISR DEFAULT_ISR `IIL(v  1 e 1 0 ]
+"11 /home/dev-user/Projects/Personal/PIC/StepperSystem_v2.X/main.c
+[v _main main `(v  1 e 1 0 ]
+"3 /home/dev-user/Projects/Personal/PIC/StepperSystem_v2.X/System.c
+[v _SetupClk SetupClk `(v  1 e 1 0 ]
+"17
+[v _SysInit SysInit `(E16361  1 e 1 0 ]
+"75
+[v _make_all_digital make_all_digital `(E16361  1 e 1 0 ]
+"86
+[v _interpretRX interpretRX `(v  1 e 1 0 ]
+"7 /opt/microchip/xc8/v2.30/pic/sources/c99/common/__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"1 /opt/microchip/xc8/v2.30/pic/sources/c99/common/abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"9 /opt/microchip/xc8/v2.30/pic/sources/c99/common/aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+"9 /opt/microchip/xc8/v2.30/pic/sources/c99/common/aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+"4 /opt/microchip/xc8/v2.30/pic/sources/c99/common/atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+"4 /opt/microchip/xc8/v2.30/pic/sources/c99/common/atol.c
+[v _atol atol `(l  1 e 4 0 ]
+"72 /opt/microchip/xc8/v2.30/pic/sources/c99/common/doprnt.c
+[v _pad pad `(i  1 s 2 pad ]
+"287
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+"615
+[v _utoa utoa `(i  1 s 2 utoa ]
+"645
+[v _xtoa xtoa `(i  1 s 2 xtoa ]
+"692
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+"1390
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"4 /opt/microchip/xc8/v2.30/pic/sources/c99/common/fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 /opt/microchip/xc8/v2.30/pic/sources/c99/common/float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 /opt/microchip/xc8/v2.30/pic/sources/c99/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 /opt/microchip/xc8/v2.30/pic/sources/c99/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 /opt/microchip/xc8/v2.30/pic/sources/c99/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 /opt/microchip/xc8/v2.30/pic/sources/c99/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"5 /opt/microchip/xc8/v2.30/pic/sources/c99/common/isalpha.c
+[v _isalpha isalpha `(i  1 e 2 0 ]
+"5 /opt/microchip/xc8/v2.30/pic/sources/c99/common/isdigit.c
+[v _isdigit isdigit `(i  1 e 2 0 ]
+"5 /opt/microchip/xc8/v2.30/pic/sources/c99/common/islower.c
+[v _islower islower `(i  1 e 2 0 ]
+"5 /opt/microchip/xc8/v2.30/pic/sources/c99/common/isspace.c
+[v _isspace isspace `(i  1 e 2 0 ]
+"5 /opt/microchip/xc8/v2.30/pic/sources/c99/common/isupper.c
+[v _isupper isupper `(i  1 e 2 0 ]
+"7 /opt/microchip/xc8/v2.30/pic/sources/c99/common/llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"9 /opt/microchip/xc8/v2.30/pic/sources/c99/common/lodiv.c
+[v ___lodiv __lodiv `(uo  1 e 8 0 ]
+"9 /opt/microchip/xc8/v2.30/pic/sources/c99/common/lomod.c
+[v ___lomod __lomod `(uo  1 e 8 0 ]
+"7 /opt/microchip/xc8/v2.30/pic/sources/c99/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"7 /opt/microchip/xc8/v2.30/pic/sources/c99/common/lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"8 /opt/microchip/xc8/v2.30/pic/sources/c99/common/nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 /opt/microchip/xc8/v2.30/pic/sources/c99/common/nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"9 /opt/microchip/xc8/v2.30/pic/sources/c99/common/nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"7 /opt/microchip/xc8/v2.30/pic/sources/c99/common/putch.c
+[v _putch putch `(v  1 e 1 0 ]
+"10 /opt/microchip/xc8/v2.30/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 /opt/microchip/xc8/v2.30/pic/sources/c99/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 /opt/microchip/xc8/v2.30/pic/sources/c99/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"3 /opt/microchip/xc8/v2.30/pic/sources/c99/common/strcat.c
+[v _strcat strcat `(*.39uc  1 e 2 0 ]
+"3 /opt/microchip/xc8/v2.30/pic/sources/c99/common/strchr.c
+[v _strchr strchr `(*.32uc  1 e 2 0 ]
+"3 /opt/microchip/xc8/v2.30/pic/sources/c99/common/strcmp.c
+[v _strcmp strcmp `(i  1 e 2 0 ]
+"3 /opt/microchip/xc8/v2.30/pic/sources/c99/common/strcpy.c
+[v _strcpy strcpy `(*.39uc  1 e 2 0 ]
+"3 /opt/microchip/xc8/v2.30/pic/sources/c99/common/strcspn.c
+[v _strcspn strcspn `(ui  1 e 2 0 ]
+"5 /opt/microchip/xc8/v2.30/pic/sources/c99/common/strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"3 /opt/microchip/xc8/v2.30/pic/sources/c99/common/strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+"3 /opt/microchip/xc8/v2.30/pic/sources/c99/common/strspn.c
+[v _strspn strspn `(ui  1 e 2 0 ]
+"3 /opt/microchip/xc8/v2.30/pic/sources/c99/common/strtok.c
+[v _strtok strtok `(*.39uc  1 e 2 0 ]
+"4 /opt/microchip/xc8/v2.30/pic/sources/c99/common/tolower.c
+[v _tolower tolower `(i  1 e 2 0 ]
+"4 /opt/microchip/xc8/v2.30/pic/sources/c99/common/toupper.c
+[v _toupper toupper `(i  1 e 2 0 ]
+"15 /opt/microchip/xc8/v2.30/pic/sources/c99/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 /opt/microchip/xc8/v2.30/pic/sources/c99/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 /opt/microchip/xc8/v2.30/pic/sources/c99/common/Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"39 /home/dev-user/Projects/Personal/PIC/LibOutputDevices.X/disp_7seg4dig.h
+[v _dispChars dispChars `[17]uc  1 e 17 0 ]
+"49
+[v _dig_disp_val dig_disp_val `[4]uc  1 e 4 0 ]
+"50
+[v _dig_idx dig_idx `uc  1 e 1 0 ]
+"51
+[v _update_disp_trigger update_disp_trigger `a  1 e 1 0 ]
+"23 /home/dev-user/Projects/Personal/PIC/LibOutputDevices.X/stepper.h
+[v _stepOutVal0 stepOutVal0 `uc  1 e 1 0 ]
+"24
+[v _stepOutShift0 stepOutShift0 `a  1 e 1 0 ]
+"25
+[v _stepState0 stepState0 `c  1 e 1 0 ]
+"26
+[v _stepDirection0 stepDirection0 `a  1 e 1 0 ]
+"27
+[v _totalSteps0 totalSteps0 `l  1 e 4 0 ]
+"28
+[v _allowStep0 allowStep0 `a  1 e 1 0 ]
+"29
+[v _pendingSteps0 pendingSteps0 `s  1 e 2 0 ]
+"43
+[v _stepOutVal1 stepOutVal1 `uc  1 e 1 0 ]
+"45
+[v _stepState1 stepState1 `c  1 e 1 0 ]
+"46
+[v _stepDirection1 stepDirection1 `a  1 e 1 0 ]
+"47
+[v _totalSteps1 totalSteps1 `l  1 e 4 0 ]
+"48
+[v _allowStep1 allowStep1 `a  1 e 1 0 ]
+"49
+[v _pendingSteps1 pendingSteps1 `s  1 e 2 0 ]
+"63
+[v _stepOutVal2 stepOutVal2 `uc  1 e 1 0 ]
+"64
+[v _stepOutShift2 stepOutShift2 `a  1 e 1 0 ]
+"65
+[v _stepState2 stepState2 `c  1 e 1 0 ]
+"66
+[v _stepDirection2 stepDirection2 `a  1 e 1 0 ]
+"67
+[v _totalSteps2 totalSteps2 `l  1 e 4 0 ]
+"68
+[v _allowStep2 allowStep2 `a  1 e 1 0 ]
+"69
+[v _pendingSteps2 pendingSteps2 `s  1 e 2 0 ]
+[s S24 . 1 `uc 1 nibbleL 1 0 :4:0 
+`uc 1 nibbleH 1 0 :4:4 
+]
+"83
+[s S27 . 1 `uc 1 val 1 0 :8:0 
+]
+[s S29 . 1 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+]
+[u S38 . 1 `S24 1 . 1 0 `S27 1 . 1 0 `S29 1 . 1 0 ]
+[s S42 . 9 `VEuc 1 Addr 1 0 `VES38 1 P0IVal 1 1 `VES38 1 P0OVal 1 2 `VES38 1 P0Inv 1 3 `VES38 1 P0Dir 1 4 `VES38 1 P1IVal 1 5 `VES38 1 P1OVal 1 6 `VES38 1 P1Inv 1 7 `VES38 1 P1Dir 1 8 ]
+[v _ioexp1 ioexp1 `VES42  1 e 9 0 ]
+"45 /home/dev-user/Projects/Personal/PIC/LibPeripherals.X/i2c.h
+[v _I2C1_use_highspeed I2C1_use_highspeed `a  1 e 1 0 ]
+"47
+[v _I2C1_buff_in I2C1_buff_in `[64]uc  1 e 64 0 ]
+"48
+[v _I2C1_buff_out I2C1_buff_out `[64]uc  1 e 64 0 ]
+"29 /home/dev-user/Projects/Personal/PIC/LibPeripherals.X/timers.h
+[v _TMR1Val TMR1Val `us  1 e 2 0 ]
+"37
+[v _TMR3Val TMR3Val `us  1 e 2 0 ]
+"45
+[v _TMR5Val TMR5Val `us  1 e 2 0 ]
+"18 /home/dev-user/Projects/Personal/PIC/LibPeripherals.X/uart.h
+[v _uart1_tx_buff_tail uart1_tx_buff_tail `uc  1 e 1 0 ]
+"19
+[v _uart1_tx_buff_head uart1_tx_buff_head `uc  1 e 1 0 ]
+"20
+[v _uart1_tx_buff_full uart1_tx_buff_full `a  1 e 1 0 ]
+"21
+[v _uart1_tx_buff uart1_tx_buff `[256]uc  1 e 256 0 ]
+"22
+[v _uart1_tx_sys_active uart1_tx_sys_active `a  1 e 1 0 ]
+"25
+[v _uart1_rx_buff_isr uart1_rx_buff_isr `[64]uc  1 e 64 0 ]
+"26
+[v _uart1_rx_buff_use uart1_rx_buff_use `[64]uc  1 e 64 0 ]
+"27
+[v _uart1_rx_buff_idx uart1_rx_buff_idx `uc  1 e 1 0 ]
+"28
+[v _uart1_rx_buff_load_cnt uart1_rx_buff_load_cnt `uc  1 e 1 0 ]
+"29
+[v _uart1_rx_msg_present uart1_rx_msg_present `a  1 e 1 0 ]
+"30
+[v _uart1_rx_sys_active uart1_rx_sys_active `a  1 e 1 0 ]
+"37 /home/dev-user/Projects/Personal/PIC/StepperSystem_v2.X/System.h
+[v _sys_time sys_time `VEul  1 e 4 0 ]
+"38
+[v _sys_stat sys_stat `VEuc  1 e 1 0 ]
+"39
+[v _halfSecondTrigger halfSecondTrigger `a  1 e 1 0 ]
+"40
+[v _twoSecondTrigger twoSecondTrigger `a  1 e 1 0 ]
+"5207 /opt/microchip/mplabx/v5.40/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8/pic/include/proc/pic18f47k42.h
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @14809 ]
+[s S54 . 1 `uc 1 PLLR 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADOR 1 0 :1:2 
+`uc 1 SOR 1 0 :1:3 
+`uc 1 LFOR 1 0 :1:4 
+`uc 1 MFOR 1 0 :1:5 
+`uc 1 HFOR 1 0 :1:6 
+`uc 1 EXTOR 1 0 :1:7 
+]
+"5409
+[u S63 . 1 `S54 1 . 1 0 ]
+[v _OSCSTATbits OSCSTATbits `VES63  1 e 1 @14812 ]
+"5654
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @14815 ]
+"7116
+[v _RB4PPS RB4PPS `VEuc  1 e 1 @14860 ]
+"7166
+[v _RB5PPS RB5PPS `VEuc  1 e 1 @14861 ]
+"7616
+[v _RC6PPS RC6PPS `VEuc  1 e 1 @14870 ]
+"8266
+[v _ANSELA ANSELA `VEuc  1 e 1 @14912 ]
+"8762
+[v _ANSELB ANSELB `VEuc  1 e 1 @14928 ]
+[s S2943 . 1 `uc 1 ODCB0 1 0 :1:0 
+`uc 1 ODCB1 1 0 :1:1 
+`uc 1 ODCB2 1 0 :1:2 
+`uc 1 ODCB3 1 0 :1:3 
+`uc 1 ODCB4 1 0 :1:4 
+`uc 1 ODCB5 1 0 :1:5 
+`uc 1 ODCB6 1 0 :1:6 
+`uc 1 ODCB7 1 0 :1:7 
+]
+"8903
+[u S2952 . 1 `S2943 1 . 1 0 ]
+[v _ODCONBbits ODCONBbits `VES2952  1 e 1 @14930 ]
+"9474
+[v _ANSELC ANSELC `VEuc  1 e 1 @14944 ]
+"10186
+[v _ANSELD ANSELD `VEuc  1 e 1 @14960 ]
+"10712
+[v _ANSELE ANSELE `VEuc  1 e 1 @14976 ]
+"11627
+[v _I2C1SCLPPS I2C1SCLPPS `VEuc  1 e 1 @15073 ]
+"11647
+[v _I2C1SDAPPS I2C1SDAPPS `VEuc  1 e 1 @15074 ]
+"11707
+[v _U1RXPPS U1RXPPS `VEuc  1 e 1 @15077 ]
+"24179
+[v _I2C1RXB I2C1RXB `VEuc  1 e 1 @15722 ]
+"24199
+[v _I2C1TXB I2C1TXB `VEuc  1 e 1 @15723 ]
+"24219
+[v _I2C1CNT I2C1CNT `VEuc  1 e 1 @15724 ]
+"24309
+[v _I2C1ADB1 I2C1ADB1 `VEuc  1 e 1 @15726 ]
+"24411
+[v _I2C1CON0 I2C1CON0 `VEuc  1 e 1 @15731 ]
+[s S2982 . 1 `uc 1 MODE 1 0 :3:0 
+`uc 1 MDR 1 0 :1:3 
+`uc 1 CSTR 1 0 :1:4 
+`uc 1 S 1 0 :1:5 
+`uc 1 RSEN 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"24433
+[s S2989 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 I2CEN 1 0 :1:7 
+]
+[u S2995 . 1 `S2982 1 . 1 0 `S2989 1 . 1 0 ]
+[v _I2C1CON0bits I2C1CON0bits `VES2995  1 e 1 @15731 ]
+"24488
+[v _I2C1CON1 I2C1CON1 `VEuc  1 e 1 @15732 ]
+"24545
+[v _I2C1CON2 I2C1CON2 `VEuc  1 e 1 @15733 ]
+[s S3013 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 D 1 0 :1:3 
+`uc 1 R 1 0 :1:4 
+`uc 1 MMA 1 0 :1:5 
+`uc 1 SMA 1 0 :1:6 
+`uc 1 BFRE 1 0 :1:7 
+]
+"24741
+[s S3020 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 DATA 1 0 :1:3 
+`uc 1 READ 1 0 :1:4 
+]
+[s S3024 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_ADDRESS 1 0 :1:3 
+`uc 1 NOT_WRITE 1 0 :1:4 
+]
+[s S3028 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_A 1 0 :1:3 
+`uc 1 NOT_W 1 0 :1:4 
+]
+[u S3032 . 1 `S3013 1 . 1 0 `S3020 1 . 1 0 `S3024 1 . 1 0 `S3028 1 . 1 0 ]
+[v _I2C1STAT0bits I2C1STAT0bits `VES3032  1 e 1 @15735 ]
+[s S3060 . 1 `uc 1 RXBF 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 CLRBF 1 0 :1:2 
+`uc 1 RXRE 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 TXBE 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 TXWE 1 0 :1:7 
+]
+"24818
+[u S3069 . 1 `S3060 1 . 1 0 ]
+[v _I2C1STAT1bits I2C1STAT1bits `VES3069  1 e 1 @15736 ]
+"25052
+[v _I2C1CLK I2C1CLK `VEuc  1 e 1 @15739 ]
+"26142
+[v _U1RXB U1RXB `VEuc  1 e 1 @15848 ]
+"26200
+[v _U1TXB U1TXB `VEuc  1 e 1 @15850 ]
+[s S525 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+]
+"26430
+[s S529 . 1 `uc 1 U1MODE 1 0 :4:0 
+`uc 1 U1RXEN 1 0 :1:4 
+`uc 1 U1TXEN 1 0 :1:5 
+`uc 1 U1ABDEN 1 0 :1:6 
+`uc 1 U1BRGS 1 0 :1:7 
+]
+[s S535 . 1 `uc 1 U1MODE0 1 0 :1:0 
+`uc 1 U1MODE1 1 0 :1:1 
+`uc 1 U1MODE2 1 0 :1:2 
+]
+[s S539 . 1 `uc 1 MODE 1 0 :4:0 
+`uc 1 RXEN 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 ABDEN 1 0 :1:6 
+`uc 1 BRGS 1 0 :1:7 
+]
+[u S545 . 1 `S525 1 . 1 0 `S529 1 . 1 0 `S535 1 . 1 0 `S539 1 . 1 0 ]
+[v _U1CON0bits U1CON0bits `VES545  1 e 1 @15858 ]
+[s S1368 . 1 `uc 1 SENDB 1 0 :1:0 
+`uc 1 BRKOVR 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 RXBIMD 1 0 :1:3 
+`uc 1 WUE 1 0 :1:4 
+`uc 1 . 1 0 :2:5 
+`uc 1 ON 1 0 :1:7 
+]
+"26540
+[s S1376 . 1 `uc 1 U1SENDB 1 0 :1:0 
+`uc 1 U1BRKOVR 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 U1RXBIMD 1 0 :1:3 
+`uc 1 U1WUE 1 0 :1:4 
+`uc 1 . 1 0 :2:5 
+`uc 1 U1ON 1 0 :1:7 
+]
+[u S1384 . 1 `S1368 1 . 1 0 `S1376 1 . 1 0 ]
+[v _U1CON1bits U1CON1bits `VES1384  1 e 1 @15859 ]
+"26595
+[v _U1CON2 U1CON2 `VEuc  1 e 1 @15860 ]
+"26744
+[v _U1BRGL U1BRGL `VEuc  1 e 1 @15861 ]
+"26764
+[v _U1BRGH U1BRGH `VEuc  1 e 1 @15862 ]
+[s S485 . 1 `uc 1 TXCIF 1 0 :1:0 
+`uc 1 RXFOIF 1 0 :1:1 
+`uc 1 RXBKIF 1 0 :1:2 
+`uc 1 FERIF 1 0 :1:3 
+`uc 1 CERIF 1 0 :1:4 
+`uc 1 ABDOVF 1 0 :1:5 
+`uc 1 PERIF 1 0 :1:6 
+`uc 1 TXMTIF 1 0 :1:7 
+]
+"26997
+[s S494 . 1 `uc 1 U1TXCIF 1 0 :1:0 
+`uc 1 U1RXFOIF 1 0 :1:1 
+`uc 1 U1RXBKIF 1 0 :1:2 
+`uc 1 U1FERIF 1 0 :1:3 
+`uc 1 U1CERIF 1 0 :1:4 
+`uc 1 U1ABDOVF 1 0 :1:5 
+`uc 1 U1PERIF 1 0 :1:6 
+`uc 1 U1TXMTIF 1 0 :1:7 
+]
+[u S503 . 1 `S485 1 . 1 0 `S494 1 . 1 0 ]
+[v _U1ERRIRbits U1ERRIRbits `VES503  1 e 1 @15865 ]
+"40088
+[v _T6PR T6PR `VEuc  1 e 1 @16275 ]
+"40126
+[v _T6CON T6CON `VEuc  1 e 1 @16276 ]
+[s S1133 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 CKPS 1 0 :3:4 
+`uc 1 ON 1 0 :1:7 
+]
+"40162
+[s S1203 . 1 `uc 1 T6OUTPS 1 0 :4:0 
+`uc 1 T6CKPS 1 0 :3:4 
+`uc 1 T6ON 1 0 :1:7 
+]
+"40162
+[s S1207 . 1 `uc 1 T6OUTPS0 1 0 :1:0 
+`uc 1 T6OUTPS1 1 0 :1:1 
+`uc 1 T6OUTPS2 1 0 :1:2 
+`uc 1 T6OUTPS3 1 0 :1:3 
+`uc 1 T6CKPS0 1 0 :1:4 
+`uc 1 T6CKPS1 1 0 :1:5 
+`uc 1 T6CKPS2 1 0 :1:6 
+]
+"40162
+[s S1215 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+`uc 1 CKPS2 1 0 :1:6 
+`uc 1 TMR6ON 1 0 :1:7 
+]
+"40162
+[u S1224 . 1 `S1133 1 . 1 0 `S1203 1 . 1 0 `S1207 1 . 1 0 `S1215 1 . 1 0 ]
+"40162
+"40162
+[v _T6CONbits T6CONbits `VES1224  1 e 1 @16276 ]
+"40272
+[v _T6HLT T6HLT `VEuc  1 e 1 @16277 ]
+"40400
+[v _T6CLKCON T6CLKCON `VEuc  1 e 1 @16278 ]
+"40650
+[v _TMR5L TMR5L `VEuc  1 e 1 @16280 ]
+"40720
+[v _TMR5H TMR5H `VEuc  1 e 1 @16281 ]
+"40790
+[v _T5CON T5CON `VEuc  1 e 1 @16282 ]
+"40980
+[v _T5GCON T5GCON `VEuc  1 e 1 @16283 ]
+"41360
+[v _T5CLK T5CLK `VEuc  1 e 1 @16285 ]
+"41564
+[v _T4PR T4PR `VEuc  1 e 1 @16287 ]
+"41602
+[v _T4CON T4CON `VEuc  1 e 1 @16288 ]
+"41638
+[s S1137 . 1 `uc 1 T4OUTPS 1 0 :4:0 
+`uc 1 T4CKPS 1 0 :3:4 
+`uc 1 T4ON 1 0 :1:7 
+]
+"41638
+[s S1141 . 1 `uc 1 T4OUTPS0 1 0 :1:0 
+`uc 1 T4OUTPS1 1 0 :1:1 
+`uc 1 T4OUTPS2 1 0 :1:2 
+`uc 1 T4OUTPS3 1 0 :1:3 
+`uc 1 T4CKPS0 1 0 :1:4 
+`uc 1 T4CKPS1 1 0 :1:5 
+`uc 1 T4CKPS2 1 0 :1:6 
+]
+"41638
+[s S1149 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+`uc 1 CKPS2 1 0 :1:6 
+`uc 1 TMR4ON 1 0 :1:7 
+]
+"41638
+[u S1158 . 1 `S1133 1 . 1 0 `S1137 1 . 1 0 `S1141 1 . 1 0 `S1149 1 . 1 0 ]
+"41638
+"41638
+[v _T4CONbits T4CONbits `VES1158  1 e 1 @16288 ]
+"41748
+[v _T4HLT T4HLT `VEuc  1 e 1 @16289 ]
+"41876
+[v _T4CLKCON T4CLKCON `VEuc  1 e 1 @16290 ]
+"42126
+[v _TMR3L TMR3L `VEuc  1 e 1 @16292 ]
+"42196
+[v _TMR3H TMR3H `VEuc  1 e 1 @16293 ]
+"42266
+[v _T3CON T3CON `VEuc  1 e 1 @16294 ]
+"42456
+[v _T3GCON T3GCON `VEuc  1 e 1 @16295 ]
+"42836
+[v _T3CLK T3CLK `VEuc  1 e 1 @16297 ]
+"43602
+[v _TMR1L TMR1L `VEuc  1 e 1 @16304 ]
+"43672
+[v _TMR1H TMR1H `VEuc  1 e 1 @16305 ]
+"43742
+[v _T1CON T1CON `VEuc  1 e 1 @16306 ]
+"43932
+[v _T1GCON T1GCON `VEuc  1 e 1 @16307 ]
+"44312
+[v _T1CLK T1CLK `VEuc  1 e 1 @16309 ]
+[s S1522 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"45249
+[s S1531 . 1 `uc 1 LB0 1 0 :1:0 
+`uc 1 LB1 1 0 :1:1 
+`uc 1 LB2 1 0 :1:2 
+`uc 1 LB3 1 0 :1:3 
+`uc 1 LB4 1 0 :1:4 
+`uc 1 LB5 1 0 :1:5 
+`uc 1 LB6 1 0 :1:6 
+`uc 1 LB7 1 0 :1:7 
+]
+"45249
+[u S1540 . 1 `S1522 1 . 1 0 `S1531 1 . 1 0 ]
+"45249
+"45249
+[v _LATBbits LATBbits `VES1540  1 e 1 @16315 ]
+"45334
+[v _LATC LATC `VEuc  1 e 1 @16316 ]
+[s S783 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"45361
+[s S792 . 1 `uc 1 LC0 1 0 :1:0 
+`uc 1 LC1 1 0 :1:1 
+`uc 1 LC2 1 0 :1:2 
+`uc 1 LC3 1 0 :1:3 
+`uc 1 LC4 1 0 :1:4 
+`uc 1 LC5 1 0 :1:5 
+`uc 1 LC6 1 0 :1:6 
+`uc 1 LC7 1 0 :1:7 
+]
+"45361
+[u S801 . 1 `S783 1 . 1 0 `S792 1 . 1 0 ]
+"45361
+"45361
+[v _LATCbits LATCbits `VES801  1 e 1 @16316 ]
+"45446
+[v _LATD LATD `VEuc  1 e 1 @16317 ]
+[s S84 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"45689
+[u S93 . 1 `S84 1 . 1 0 ]
+"45689
+"45689
+[v _TRISBbits TRISBbits `VES93  1 e 1 @16323 ]
+[s S823 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"45751
+[u S832 . 1 `S823 1 . 1 0 ]
+"45751
+"45751
+[v _TRISCbits TRISCbits `VES832  1 e 1 @16324 ]
+"45796
+[v _TRISD TRISD `VEuc  1 e 1 @16325 ]
+[s S149 . 1 `uc 1 INT0EDG 1 0 :1:0 
+`uc 1 INT1EDG 1 0 :1:1 
+`uc 1 INT2EDG 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 IPEN 1 0 :1:5 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"46269
+[s S157 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 GIEH 1 0 :1:7 
+]
+"46269
+[u S160 . 1 `S149 1 . 1 0 `S157 1 . 1 0 ]
+"46269
+"46269
+[v _INTCON0bits INTCON0bits `VES160  1 e 1 @16338 ]
+"51504
+[v _GIE GIE `VEb  1 e 0 @130711 ]
+"57150
+[v _TMR1IE TMR1IE `VEb  1 e 0 @117920 ]
+"57153
+[v _TMR1IF TMR1IF `VEb  1 e 0 @118048 ]
+"57186
+[v _TMR1ON TMR1ON `VEb  1 e 0 @130448 ]
+"57252
+[v _TMR3IE TMR3IE `VEb  1 e 0 @117942 ]
+"57255
+[v _TMR3IF TMR3IF `VEb  1 e 0 @118070 ]
+"57288
+[v _TMR3ON TMR3ON `VEb  1 e 0 @130352 ]
+"57291
+[v _TMR4IE TMR4IE `VEb  1 e 0 @117944 ]
+"57294
+[v _TMR4IF TMR4IF `VEb  1 e 0 @118072 ]
+"57297
+[v _TMR4IP TMR4IP `VEb  1 e 0 @117816 ]
+"57342
+[v _TMR5IE TMR5IE `VEb  1 e 0 @117958 ]
+"57345
+[v _TMR5IF TMR5IF `VEb  1 e 0 @118086 ]
+"57378
+[v _TMR5ON TMR5ON `VEb  1 e 0 @130256 ]
+"57381
+[v _TMR6IE TMR6IE `VEb  1 e 0 @117960 ]
+"57384
+[v _TMR6IF TMR6IF `VEb  1 e 0 @118088 ]
+"57729
+[v _U1RXIE U1RXIE `VEb  1 e 0 @117915 ]
+"57732
+[v _U1RXIF U1RXIF `VEb  1 e 0 @118043 ]
+"57765
+[v _U1TXEN U1TXEN `VEb  1 e 0 @126869 ]
+"57768
+[v _U1TXIE U1TXIE `VEb  1 e 0 @117916 ]
+"57771
+[v _U1TXIF U1TXIF `VEb  1 e 0 @118044 ]
+"55 /opt/microchip/xc8/v2.30/pic/sources/c99/common/doprnt.c
+[v _flags flags `i  1 s 2 flags ]
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"66
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"69
+[v _nout nout `i  1 s 2 nout ]
+"11 /home/dev-user/Projects/Personal/PIC/StepperSystem_v2.X/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"20
+[v main@msg_buff msg_buff `[64]uc  1 a 64 55 ]
+"81
+} 0
+"112 /home/dev-user/Projects/Personal/PIC/LibOutputDevices.X/disp_7seg4dig.c
+[v _updateDispValHex updateDispValHex `(E16361  1 e 1 0 ]
+{
+"119
+[v updateDispValHex@tmpVal tmpVal `us  1 a 2 41 ]
+"116
+[v updateDispValHex@dig_2_on dig_2_on `a  1 a 1 40 ]
+"115
+[v updateDispValHex@dig_1_on dig_1_on `a  1 a 1 39 ]
+"117
+[v updateDispValHex@dig_3_on dig_3_on `a  1 a 1 38 ]
+"114
+[v updateDispValHex@dig_0_on dig_0_on `a  1 a 1 37 ]
+"112
+[v updateDispValHex@newVal newVal `us  1 p 2 31 ]
+[v updateDispValHex@newDP newDP `uc  1 p 1 33 ]
+"189
+} 0
+"476 /home/dev-user/Projects/Personal/PIC/LibOutputDevices.X/stepper.c
+[v _stepSMachine2 stepSMachine2 `(E16361  1 e 1 0 ]
+{
+"482
+} 0
+"599
+[v _stepMotor2 stepMotor2 `(E16287  1 e 1 0 ]
+{
+"614
+} 0
+"484
+[v _stepMotorSM2 stepMotorSM2 `(E16287  1 e 1 0 ]
+{
+"575
+} 0
+"577
+[v _updateStepState2 updateStepState2 `(E16287  1 e 1 0 ]
+{
+"597
+} 0
+"141 /home/dev-user/Projects/Personal/PIC/LibPeripherals.X/timers.c
+[v _Tmr5Setup Tmr5Setup `(E16287  1 e 1 0 ]
+{
+"152
+[v Tmr5Setup@regVal regVal `ul  1 a 4 52 ]
+"151
+[v Tmr5Setup@prescalarVal prescalarVal `uc  1 a 1 51 ]
+"141
+[v Tmr5Setup@tmr_freq tmr_freq `us  1 p 2 44 ]
+[v Tmr5Setup@use_int use_int `a  1 p 1 46 ]
+"173
+} 0
+"180
+[v _Tmr5Disable Tmr5Disable `(v  1 e 1 0 ]
+{
+"183
+} 0
+"175
+[v _Tmr5Enable Tmr5Enable `(v  1 e 1 0 ]
+{
+"178
+} 0
+"263 /home/dev-user/Projects/Personal/PIC/LibOutputDevices.X/stepper.c
+[v _stepSMachine1 stepSMachine1 `(E16361  1 e 1 0 ]
+{
+"269
+} 0
+"387
+[v _stepMotor1 stepMotor1 `(E16287  1 e 1 0 ]
+{
+"402
+} 0
+"271
+[v _stepMotorSM1 stepMotorSM1 `(E16287  1 e 1 0 ]
+{
+"363
+} 0
+"365
+[v _updateStepState1 updateStepState1 `(E16287  1 e 1 0 ]
+{
+"385
+} 0
+"95 /home/dev-user/Projects/Personal/PIC/LibPeripherals.X/timers.c
+[v _Tmr3Setup Tmr3Setup `(E16287  1 e 1 0 ]
+{
+"106
+[v Tmr3Setup@regVal regVal `ul  1 a 4 52 ]
+"105
+[v Tmr3Setup@prescalarVal prescalarVal `uc  1 a 1 51 ]
+"95
+[v Tmr3Setup@tmr_freq tmr_freq `us  1 p 2 44 ]
+[v Tmr3Setup@use_int use_int `a  1 p 1 46 ]
+"127
+} 0
+"134
+[v _Tmr3Disable Tmr3Disable `(v  1 e 1 0 ]
+{
+"137
+} 0
+"129
+[v _Tmr3Enable Tmr3Enable `(v  1 e 1 0 ]
+{
+"132
+} 0
+"50 /home/dev-user/Projects/Personal/PIC/LibOutputDevices.X/stepper.c
+[v _stepSMachine0 stepSMachine0 `(E16361  1 e 1 0 ]
+{
+"56
+} 0
+"173
+[v _stepMotor0 stepMotor0 `(E16287  1 e 1 0 ]
+{
+"188
+} 0
+"58
+[v _stepMotorSM0 stepMotorSM0 `(E16287  1 e 1 0 ]
+{
+"149
+} 0
+"151
+[v _updateStepState0 updateStepState0 `(E16287  1 e 1 0 ]
+{
+"171
+} 0
+"49 /home/dev-user/Projects/Personal/PIC/LibPeripherals.X/timers.c
+[v _Tmr1Setup Tmr1Setup `(E16287  1 e 1 0 ]
+{
+"60
+[v Tmr1Setup@regVal regVal `ul  1 a 4 52 ]
+"59
+[v Tmr1Setup@prescalarVal prescalarVal `uc  1 a 1 51 ]
+"49
+[v Tmr1Setup@tmr_freq tmr_freq `us  1 p 2 44 ]
+[v Tmr1Setup@use_int use_int `a  1 p 1 46 ]
+"81
+} 0
+"88
+[v _Tmr1Disable Tmr1Disable `(v  1 e 1 0 ]
+{
+"91
+} 0
+"83
+[v _Tmr1Enable Tmr1Enable `(v  1 e 1 0 ]
+{
+"86
+} 0
+"632 /home/dev-user/Projects/Personal/PIC/LibOutputDevices.X/stepper.c
+[v _outputUpdate outputUpdate `(E16287  1 e 1 0 ]
+{
+"647
+} 0
+"102 /home/dev-user/Projects/Personal/PIC/LibMisc.X/IOExp_PCA9539A.c
+[v _IOExpUpdateOutPart IOExpUpdateOutPart `(E16287  1 e 1 0 ]
+{
+[s S24 . 1 `uc 1 nibbleL 1 0 :4:0 
+`uc 1 nibbleH 1 0 :4:4 
+]
+[s S27 . 1 `uc 1 val 1 0 :8:0 
+]
+[s S29 . 1 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+]
+[u S38 . 1 `S24 1 . 1 0 `S27 1 . 1 0 `S29 1 . 1 0 ]
+[s S1502 . 9 `VEuc 1 Addr 1 0 `VES38 1 P0IVal 1 1 `VES38 1 P0OVal 1 2 `VES38 1 P0Inv 1 3 `VES38 1 P0Dir 1 4 `VES38 1 P1IVal 1 5 `VES38 1 P1OVal 1 6 `VES38 1 P1Inv 1 7 `VES38 1 P1Dir 1 8 ]
+[v IOExpUpdateOutPart@ioexp_inst ioexp_inst `*.39VES1502  1 p 2 41 ]
+[v IOExpUpdateOutPart@set_oval set_oval `uc  1 p 1 43 ]
+[v IOExpUpdateOutPart@port_num port_num `uc  1 p 1 44 ]
+"112
+} 0
+"86 /home/dev-user/Projects/Personal/PIC/StepperSystem_v2.X/System.c
+[v _interpretRX interpretRX `(v  1 e 1 0 ]
+{
+"109
+[v interpretRX@j j `i  1 a 2 84 ]
+"108
+[v interpretRX@cmd cmd `[16]uc  1 a 16 64 ]
+"93
+[v interpretRX@i i `i  1 a 2 82 ]
+"88
+[v interpretRX@respBuff respBuff `[256]uc  1 a 256 0 ]
+"92
+[v interpretRX@loc_msg_buff loc_msg_buff `[64]uc  1 a 64 0 ]
+"103
+[v interpretRX@inputVal inputVal `l  1 a 4 86 ]
+"101
+[v interpretRX@fieldStr fieldStr `[2]*.39uc  1 a 4 49 ]
+"102
+[v interpretRX@i_427 i `i  1 a 2 80 ]
+"100
+[v interpretRX@p p `*.39uc  1 a 2 47 ]
+"90
+[v interpretRX@gotChar gotChar `a  1 a 1 54 ]
+"89
+[v interpretRX@valid valid `a  1 a 1 53 ]
+"149
+} 0
+"118 /home/dev-user/Projects/Personal/PIC/LibPeripherals.X/uart.c
+[v _uart1_tx_str_crlf uart1_tx_str_crlf `(E16361  1 e 1 0 ]
+{
+"123
+[v uart1_tx_str_crlf@new_buff new_buff `[64]uc  1 a 64 51 ]
+"118
+[v uart1_tx_str_crlf@in_bytes in_bytes `*.39uc  1 p 2 49 ]
+"131
+} 0
+"91
+[v _uart1_tx_str uart1_tx_str `(E16287  1 e 1 0 ]
+{
+"97
+[v uart1_tx_str@i i `uc  1 a 1 39 ]
+"91
+[v uart1_tx_str@in_bytes in_bytes `*.39uc  1 p 2 35 ]
+"116
+} 0
+"3 /opt/microchip/xc8/v2.30/pic/sources/c99/common/strcat.c
+[v _strcat strcat `(*.39uc  1 e 2 0 ]
+{
+[v strcat@dest dest `*.39uc  1 p 2 45 ]
+[v strcat@src src `*.32Cuc  1 p 2 47 ]
+"7
+} 0
+"3 /opt/microchip/xc8/v2.30/pic/sources/c99/common/strcpy.c
+[v _strcpy strcpy `(*.39uc  1 e 2 0 ]
+{
+"6
+[v strcpy@d d `*.39uc  1 a 2 43 ]
+"5
+[v strcpy@s s `*.34Cuc  1 a 2 41 ]
+"3
+[v strcpy@dest dest `*.39uc  1 p 2 35 ]
+[v strcpy@src src `*.34Cuc  1 p 2 37 ]
+"9
+} 0
+"4 /opt/microchip/xc8/v2.30/pic/sources/c99/common/tolower.c
+[v _tolower tolower `(i  1 e 2 0 ]
+{
+[v tolower@c c `i  1 p 2 37 ]
+"8
+} 0
+"3 /opt/microchip/xc8/v2.30/pic/sources/c99/common/strtok.c
+[v _strtok strtok `(*.39uc  1 e 2 0 ]
+{
+[v strtok@s s `*.39uc  1 p 2 42 ]
+[v strtok@sep sep `*.32Cuc  1 p 2 44 ]
+"5
+[v strtok@p p `*.39uc  1 s 2 p ]
+"13
+} 0
+"3 /opt/microchip/xc8/v2.30/pic/sources/c99/common/strspn.c
+[v _strspn strspn `(ui  1 e 2 0 ]
+{
+"5
+[v strspn@i i `ui  1 a 2 40 ]
+"3
+[v strspn@s s `*.39Cuc  1 p 2 35 ]
+[v strspn@c c `*.32Cuc  1 p 2 37 ]
+"13
+} 0
+"3 /opt/microchip/xc8/v2.30/pic/sources/c99/common/strcspn.c
+[v _strcspn strcspn `(ui  1 e 2 0 ]
+{
+"5
+[v strcspn@i i `ui  1 a 2 40 ]
+"3
+[v strcspn@s s `*.39Cuc  1 p 2 35 ]
+[v strcspn@c c `*.32Cuc  1 p 2 37 ]
+"13
+} 0
+"3 /opt/microchip/xc8/v2.30/pic/sources/c99/common/strchr.c
+[v _strchr strchr `(*.32uc  1 e 2 0 ]
+{
+[v strchr@s s `*.32Cuc  1 p 2 31 ]
+[v strchr@c c `i  1 p 2 33 ]
+"11
+} 0
+"3 /opt/microchip/xc8/v2.30/pic/sources/c99/common/strcmp.c
+[v _strcmp strcmp `(i  1 e 2 0 ]
+{
+[v strcmp@l l `*.39Cuc  1 p 2 31 ]
+[v strcmp@r r `*.32Cuc  1 p 2 33 ]
+"7
+} 0
+"9 /opt/microchip/xc8/v2.30/pic/sources/c99/common/nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[s S3612 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+"13
+[v sprintf@f f `S3612  1 a 6 41 ]
+"12
+[v sprintf@ap ap `[1]*.39v  1 a 2 39 ]
+"9
+[v sprintf@s s `*.39uc  1 p 2 27 ]
+[v sprintf@fmt fmt `*.32Cuc  1 p 2 29 ]
+"23
+} 0
+"1390 /opt/microchip/xc8/v2.30/pic/sources/c99/common/doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1393
+[v vfprintf@cfmt cfmt `*.32uc  1 a 2 117 ]
+[s S3638 _IO_FILE 0 ]
+"1390
+[v vfprintf@fp fp `*.39S3638  1 p 2 21 ]
+[v vfprintf@fmt fmt `*.32Cuc  1 p 2 23 ]
+[v vfprintf@ap ap `*.39*.39v  1 p 2 25 ]
+"1404
+} 0
+"692
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+{
+"697
+[v vfpfcnvrt@llu llu `uo  1 a 8 13 ]
+"696
+[v vfpfcnvrt@ll ll `o  1 a 8 4 ]
+"695
+[v vfpfcnvrt@done done `i  1 a 2 0 ]
+"694
+[v vfpfcnvrt@c c `uc  1 a 1 12 ]
+[s S3638 _IO_FILE 0 ]
+"692
+[v vfpfcnvrt@fp fp `*.39S3638  1 p 2 97 ]
+[v vfpfcnvrt@fmt fmt `*.39*.32uc  1 p 2 99 ]
+[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 101 ]
+"1387
+} 0
+"645
+[v _xtoa xtoa `(i  1 s 2 xtoa ]
+{
+"648
+[v xtoa@n n `uo  1 a 8 85 ]
+"647
+[v xtoa@c c `i  1 a 2 95 ]
+[v xtoa@i i `i  1 a 2 93 ]
+[v xtoa@w w `i  1 a 2 83 ]
+[v xtoa@p p `i  1 a 2 81 ]
+[s S3638 _IO_FILE 0 ]
+"645
+[v xtoa@fp fp `*.39S3638  1 p 2 58 ]
+[v xtoa@d d `uo  1 p 8 60 ]
+[v xtoa@x x `uc  1 p 1 68 ]
+"687
+} 0
+"4 /opt/microchip/xc8/v2.30/pic/sources/c99/common/toupper.c
+[v _toupper toupper `(i  1 e 2 0 ]
+{
+[v toupper@c c `i  1 p 2 37 ]
+"8
+} 0
+"5 /opt/microchip/xc8/v2.30/pic/sources/c99/common/islower.c
+[v _islower islower `(i  1 e 2 0 ]
+{
+[v islower@c c `i  1 p 2 31 ]
+"8
+} 0
+"5 /opt/microchip/xc8/v2.30/pic/sources/c99/common/isupper.c
+[v _isupper isupper `(i  1 e 2 0 ]
+{
+[v isupper@c c `i  1 p 2 31 ]
+"8
+} 0
+"5 /opt/microchip/xc8/v2.30/pic/sources/c99/common/isalpha.c
+[v _isalpha isalpha `(i  1 e 2 0 ]
+{
+[v isalpha@c c `i  1 p 2 31 ]
+"8
+} 0
+"615 /opt/microchip/xc8/v2.30/pic/sources/c99/common/doprnt.c
+[v _utoa utoa `(i  1 s 2 utoa ]
+{
+"618
+[v utoa@n n `uo  1 a 8 80 ]
+"617
+[v utoa@i i `i  1 a 2 88 ]
+[v utoa@w w `i  1 a 2 78 ]
+[v utoa@p p `i  1 a 2 76 ]
+[s S3638 _IO_FILE 0 ]
+"615
+[v utoa@fp fp `*.39S3638  1 p 2 58 ]
+[v utoa@d d `uo  1 p 8 60 ]
+"641
+} 0
+"9 /opt/microchip/xc8/v2.30/pic/sources/c99/common/lomod.c
+[v ___lomod __lomod `(uo  1 e 8 0 ]
+{
+"12
+[v ___lomod@counter counter `uc  1 a 1 47 ]
+"9
+[v ___lomod@dividend dividend `uo  1 p 8 31 ]
+[v ___lomod@divisor divisor `uo  1 p 8 39 ]
+"27
+} 0
+"9 /opt/microchip/xc8/v2.30/pic/sources/c99/common/lodiv.c
+[v ___lodiv __lodiv `(uo  1 e 8 0 ]
+{
+"12
+[v ___lodiv@quotient quotient `uo  1 a 8 47 ]
+"13
+[v ___lodiv@counter counter `uc  1 a 1 55 ]
+"9
+[v ___lodiv@dividend dividend `uo  1 p 8 31 ]
+[v ___lodiv@divisor divisor `uo  1 p 8 39 ]
+"32
+} 0
+"3 /opt/microchip/xc8/v2.30/pic/sources/c99/common/strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+{
+"5
+[v strncmp@r r `*.32Cuc  1 a 2 40 ]
+[v strncmp@l l `*.32Cuc  1 a 2 38 ]
+"3
+[v strncmp@_l _l `*.32Cuc  1 p 2 31 ]
+[v strncmp@_r _r `*.32Cuc  1 p 2 33 ]
+[v strncmp@n n `ui  1 p 2 35 ]
+"9
+} 0
+"287 /opt/microchip/xc8/v2.30/pic/sources/c99/common/doprnt.c
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+{
+"290
+[v dtoa@n n `o  1 a 8 84 ]
+"289
+[v dtoa@i i `i  1 a 2 92 ]
+[v dtoa@s s `i  1 a 2 82 ]
+[v dtoa@w w `i  1 a 2 80 ]
+[v dtoa@p p `i  1 a 2 78 ]
+[s S3638 _IO_FILE 0 ]
+"287
+[v dtoa@fp fp `*.39S3638  1 p 2 58 ]
+[v dtoa@d d `o  1 p 8 60 ]
+"328
+} 0
+"72
+[v _pad pad `(i  1 s 2 pad ]
+{
+"74
+[v pad@w w `i  1 a 2 56 ]
+[v pad@i i `i  1 a 2 54 ]
+[s S3638 _IO_FILE 0 ]
+"72
+[v pad@fp fp `*.39S3638  1 p 2 47 ]
+[v pad@buf buf `*.39uc  1 p 2 49 ]
+[v pad@p p `i  1 p 2 51 ]
+"95
+} 0
+"5 /opt/microchip/xc8/v2.30/pic/sources/c99/common/strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+"7
+[v strlen@a a `*.39Cuc  1 a 2 33 ]
+"5
+[v strlen@s s `*.39Cuc  1 p 2 31 ]
+"12
+} 0
+"8 /opt/microchip/xc8/v2.30/pic/sources/c99/common/nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+"11
+[v fputs@i i `i  1 a 2 45 ]
+"10
+[v fputs@c c `uc  1 a 1 44 ]
+"8
+[v fputs@s s `*.39Cuc  1 p 2 40 ]
+[s S3612 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputs@fp fp `*.39S3612  1 p 2 42 ]
+"19
+} 0
+"8 /opt/microchip/xc8/v2.30/pic/sources/c99/common/nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 31 ]
+[s S3612 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputc@fp fp `*.39S3612  1 p 2 33 ]
+"24
+} 0
+"7 /opt/microchip/xc8/v2.30/pic/sources/c99/common/putch.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+"9
+} 0
+"1 /opt/microchip/xc8/v2.30/pic/sources/c99/common/abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 49 ]
+"4
+} 0
+"9 /opt/microchip/xc8/v2.30/pic/sources/c99/common/aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+{
+"12
+[v ___aomod@sign sign `uc  1 a 1 48 ]
+[v ___aomod@counter counter `uc  1 a 1 47 ]
+"9
+[v ___aomod@dividend dividend `o  1 p 8 31 ]
+[v ___aomod@divisor divisor `o  1 p 8 39 ]
+"36
+} 0
+"9 /opt/microchip/xc8/v2.30/pic/sources/c99/common/aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+{
+"12
+[v ___aodiv@quotient quotient `o  1 a 8 49 ]
+"13
+[v ___aodiv@sign sign `uc  1 a 1 48 ]
+[v ___aodiv@counter counter `uc  1 a 1 47 ]
+"9
+[v ___aodiv@dividend dividend `o  1 p 8 31 ]
+[v ___aodiv@divisor divisor `o  1 p 8 39 ]
+"43
+} 0
+"4 /opt/microchip/xc8/v2.30/pic/sources/c99/common/atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+{
+"6
+[v atoi@n n `i  1 a 2 51 ]
+[v atoi@neg neg `i  1 a 2 44 ]
+"4
+[v atoi@s s `*.32Cuc  1 p 2 38 ]
+"16
+} 0
+"15 /opt/microchip/xc8/v2.30/pic/sources/c99/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 35 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 31 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 33 ]
+"53
+} 0
+"4 /opt/microchip/xc8/v2.30/pic/sources/c99/common/atol.c
+[v _atol atol `(l  1 e 4 0 ]
+{
+"6
+[v atol@n n `l  1 a 4 59 ]
+"7
+[v atol@neg neg `i  1 a 2 52 ]
+"4
+[v atol@s s `*.39Cuc  1 p 2 43 ]
+"17
+} 0
+"5 /opt/microchip/xc8/v2.30/pic/sources/c99/common/isspace.c
+[v _isspace isspace `(i  1 e 2 0 ]
+{
+[v isspace@c c `i  1 p 2 31 ]
+"8
+} 0
+"5 /opt/microchip/xc8/v2.30/pic/sources/c99/common/isdigit.c
+[v _isdigit isdigit `(i  1 e 2 0 ]
+{
+[v isdigit@c c `i  1 p 2 31 ]
+"8
+} 0
+"15 /opt/microchip/xc8/v2.30/pic/sources/c99/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+{
+"17
+[v ___lmul@product product `ul  1 a 4 39 ]
+"15
+[v ___lmul@multiplier multiplier `ul  1 p 4 31 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 35 ]
+"129
+} 0
+"17 /home/dev-user/Projects/Personal/PIC/StepperSystem_v2.X/System.c
+[v _SysInit SysInit `(E16361  1 e 1 0 ]
+{
+"73
+} 0
+"428 /home/dev-user/Projects/Personal/PIC/LibOutputDevices.X/stepper.c
+[v _setupStepper2 setupStepper2 `(E16361  1 e 1 0 ]
+{
+"451
+} 0
+"217
+[v _setupStepper1 setupStepper1 `(E16361  1 e 1 0 ]
+{
+"240
+} 0
+"4
+[v _setupStepper0 setupStepper0 `(E16361  1 e 1 0 ]
+{
+"27
+} 0
+"4 /home/dev-user/Projects/Personal/PIC/LibOutputDevices.X/disp_7seg4dig.c
+[v _setupDisp setupDisp `(E16361  1 e 1 0 ]
+{
+[v setupDisp@initVal initVal `us  1 p 2 47 ]
+"28
+} 0
+"30
+[v _updateDispVal updateDispVal `(E16287  1 e 1 0 ]
+{
+"37
+[v updateDispVal@tmpVal tmpVal `us  1 a 2 45 ]
+"34
+[v updateDispVal@dig_2_on dig_2_on `a  1 a 1 44 ]
+"33
+[v updateDispVal@dig_1_on dig_1_on `a  1 a 1 43 ]
+"35
+[v updateDispVal@dig_3_on dig_3_on `a  1 a 1 42 ]
+"32
+[v updateDispVal@dig_0_on dig_0_on `a  1 a 1 41 ]
+"30
+[v updateDispVal@newVal newVal `us  1 p 2 38 ]
+[v updateDispVal@newDP newDP `uc  1 p 1 40 ]
+"110
+} 0
+"7 /opt/microchip/xc8/v2.30/pic/sources/c99/common/lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 35 ]
+"7
+[v ___lwmod@dividend dividend `ui  1 p 2 31 ]
+[v ___lwmod@divisor divisor `ui  1 p 2 33 ]
+"25
+} 0
+"7 /opt/microchip/xc8/v2.30/pic/sources/c99/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 36 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 35 ]
+"7
+[v ___lwdiv@dividend dividend `ui  1 p 2 31 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 33 ]
+"30
+} 0
+"75 /home/dev-user/Projects/Personal/PIC/StepperSystem_v2.X/System.c
+[v _make_all_digital make_all_digital `(E16361  1 e 1 0 ]
+{
+"84
+} 0
+"4 /home/dev-user/Projects/Personal/PIC/LibPeripherals.X/uart.c
+[v _UART1Setup UART1Setup `(E16361  1 e 1 0 ]
+{
+"72
+[v UART1Setup@i_1474 i `uc  1 a 1 56 ]
+"61
+[v UART1Setup@i i `us  1 a 2 54 ]
+"34
+[v UART1Setup@regVal regVal `ul  1 a 4 57 ]
+"4
+[v UART1Setup@set_baud set_baud `ul  1 p 4 44 ]
+[v UART1Setup@use_tx use_tx `a  1 p 1 48 ]
+[v UART1Setup@use_rx use_rx `a  1 p 1 49 ]
+"89
+} 0
+"231 /home/dev-user/Projects/Personal/PIC/LibPeripherals.X/timers.c
+[v _Tmr4Setup Tmr4Setup `(E16361  1 e 1 0 ]
+{
+"239
+[v Tmr4Setup@regVal regVal `ul  1 a 4 54 ]
+"238
+[v Tmr4Setup@prescalarVal prescalarVal `uc  1 a 1 53 ]
+"231
+[v Tmr4Setup@tmr_freq tmr_freq `ul  1 p 4 44 ]
+[v Tmr4Setup@use_int use_int `a  1 p 1 48 ]
+"258
+} 0
+"265
+[v _Tmr4Disable Tmr4Disable `(v  1 e 1 0 ]
+{
+"268
+} 0
+"260
+[v _Tmr4Enable Tmr4Enable `(v  1 e 1 0 ]
+{
+"263
+} 0
+"13 /home/dev-user/Projects/Personal/PIC/LibMisc.X/IOExp_PCA9539A.c
+[v _IOExpSetup IOExpSetup `(E16361  1 e 1 0 ]
+{
+[s S24 . 1 `uc 1 nibbleL 1 0 :4:0 
+`uc 1 nibbleH 1 0 :4:4 
+]
+[s S27 . 1 `uc 1 val 1 0 :8:0 
+]
+[s S29 . 1 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+]
+[u S38 . 1 `S24 1 . 1 0 `S27 1 . 1 0 `S29 1 . 1 0 ]
+[s S1502 . 9 `VEuc 1 Addr 1 0 `VES38 1 P0IVal 1 1 `VES38 1 P0OVal 1 2 `VES38 1 P0Inv 1 3 `VES38 1 P0Dir 1 4 `VES38 1 P1IVal 1 5 `VES38 1 P1OVal 1 6 `VES38 1 P1Inv 1 7 `VES38 1 P1Dir 1 8 ]
+[v IOExpSetup@ioexp_inst ioexp_inst `*.39VES1502  1 p 2 59 ]
+[v IOExpSetup@set_addr set_addr `uc  1 p 1 61 ]
+[v IOExpSetup@set_dir set_dir `us  1 p 2 62 ]
+[v IOExpSetup@set_inv set_inv `us  1 p 2 64 ]
+[v IOExpSetup@set_oval set_oval `us  1 p 2 66 ]
+"75
+} 0
+"77
+[v _IOExpUpdateAll IOExpUpdateAll `(E16361  1 e 1 0 ]
+{
+[s S24 . 1 `uc 1 nibbleL 1 0 :4:0 
+`uc 1 nibbleH 1 0 :4:4 
+]
+[s S27 . 1 `uc 1 val 1 0 :8:0 
+]
+[s S29 . 1 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+]
+[u S38 . 1 `S24 1 . 1 0 `S27 1 . 1 0 `S29 1 . 1 0 ]
+[s S1502 . 9 `VEuc 1 Addr 1 0 `VES38 1 P0IVal 1 1 `VES38 1 P0OVal 1 2 `VES38 1 P0Inv 1 3 `VES38 1 P0Dir 1 4 `VES38 1 P1IVal 1 5 `VES38 1 P1OVal 1 6 `VES38 1 P1Inv 1 7 `VES38 1 P1Dir 1 8 ]
+[v IOExpUpdateAll@ioexp_inst ioexp_inst `*.39VES1502  1 p 2 43 ]
+"92
+} 0
+"191
+[v _IOExpWriteVal IOExpWriteVal `(E16287  1 e 1 0 ]
+{
+"195
+[v IOExpWriteVal@datVals datVals `[2]uc  1 a 2 38 ]
+"193
+[v IOExpWriteVal@wrtCnt wrtCnt `uc  1 a 1 40 ]
+"194
+[v IOExpWriteVal@intAddr intAddr `uc  1 a 1 37 ]
+[s S24 . 1 `uc 1 nibbleL 1 0 :4:0 
+`uc 1 nibbleH 1 0 :4:4 
+]
+"191
+[s S27 . 1 `uc 1 val 1 0 :8:0 
+]
+[s S29 . 1 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+]
+[u S38 . 1 `S24 1 . 1 0 `S27 1 . 1 0 `S29 1 . 1 0 ]
+[s S1502 . 9 `VEuc 1 Addr 1 0 `VES38 1 P0IVal 1 1 `VES38 1 P0OVal 1 2 `VES38 1 P0Inv 1 3 `VES38 1 P0Dir 1 4 `VES38 1 P1IVal 1 5 `VES38 1 P1OVal 1 6 `VES38 1 P1Inv 1 7 `VES38 1 P1Dir 1 8 ]
+[v IOExpWriteVal@ioexp_inst ioexp_inst `*.39VES1502  1 p 2 34 ]
+[v IOExpWriteVal@portSel portSel `E16387  1 p 1 36 ]
+"226
+} 0
+"155
+[v _IOExpWriteInv IOExpWriteInv `(E16287  1 e 1 0 ]
+{
+"159
+[v IOExpWriteInv@datVals datVals `[2]uc  1 a 2 38 ]
+"157
+[v IOExpWriteInv@wrtCnt wrtCnt `uc  1 a 1 40 ]
+"158
+[v IOExpWriteInv@intAddr intAddr `uc  1 a 1 37 ]
+[s S24 . 1 `uc 1 nibbleL 1 0 :4:0 
+`uc 1 nibbleH 1 0 :4:4 
+]
+"155
+[s S27 . 1 `uc 1 val 1 0 :8:0 
+]
+[s S29 . 1 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+]
+[u S38 . 1 `S24 1 . 1 0 `S27 1 . 1 0 `S29 1 . 1 0 ]
+[s S1502 . 9 `VEuc 1 Addr 1 0 `VES38 1 P0IVal 1 1 `VES38 1 P0OVal 1 2 `VES38 1 P0Inv 1 3 `VES38 1 P0Dir 1 4 `VES38 1 P1IVal 1 5 `VES38 1 P1OVal 1 6 `VES38 1 P1Inv 1 7 `VES38 1 P1Dir 1 8 ]
+[v IOExpWriteInv@ioexp_inst ioexp_inst `*.39VES1502  1 p 2 34 ]
+[v IOExpWriteInv@portSel portSel `E16387  1 p 1 36 ]
+"189
+} 0
+"119
+[v _IOExpWriteDir IOExpWriteDir `(E16287  1 e 1 0 ]
+{
+"123
+[v IOExpWriteDir@datVals datVals `[2]uc  1 a 2 38 ]
+"121
+[v IOExpWriteDir@wrtCnt wrtCnt `uc  1 a 1 40 ]
+"122
+[v IOExpWriteDir@intAddr intAddr `uc  1 a 1 37 ]
+[s S24 . 1 `uc 1 nibbleL 1 0 :4:0 
+`uc 1 nibbleH 1 0 :4:4 
+]
+"119
+[s S27 . 1 `uc 1 val 1 0 :8:0 
+]
+[s S29 . 1 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+]
+[u S38 . 1 `S24 1 . 1 0 `S27 1 . 1 0 `S29 1 . 1 0 ]
+[s S1502 . 9 `VEuc 1 Addr 1 0 `VES38 1 P0IVal 1 1 `VES38 1 P0OVal 1 2 `VES38 1 P0Inv 1 3 `VES38 1 P0Dir 1 4 `VES38 1 P1IVal 1 5 `VES38 1 P1OVal 1 6 `VES38 1 P1Inv 1 7 `VES38 1 P1Dir 1 8 ]
+[v IOExpWriteDir@ioexp_inst ioexp_inst `*.39VES1502  1 p 2 34 ]
+[v IOExpWriteDir@portSel portSel `E16387  1 p 1 36 ]
+"153
+} 0
+"53 /home/dev-user/Projects/Personal/PIC/LibPeripherals.X/i2c.c
+[v _I2C1Write I2C1Write `(uc  1 e 1 0 ]
+{
+[v I2C1Write@byteCnt byteCnt `uc  1 a 1 wreg ]
+"57
+[v I2C1Write@write_count write_count `uc  1 a 1 33 ]
+"53
+[v I2C1Write@byteCnt byteCnt `uc  1 a 1 wreg ]
+[v I2C1Write@devAddr devAddr `uc  1 p 1 31 ]
+[v I2C1Write@byteCnt byteCnt `uc  1 a 1 32 ]
+"73
+} 0
+"293 /home/dev-user/Projects/Personal/PIC/LibMisc.X/IOExp_PCA9539A.c
+[v _IOExpReadIVal IOExpReadIVal `(E16287  1 e 1 0 ]
+{
+"297
+[v IOExpReadIVal@outVals outVals `[2]uc  1 a 2 41 ]
+"295
+[v IOExpReadIVal@rdCnt rdCnt `uc  1 a 1 40 ]
+"296
+[v IOExpReadIVal@intAddr intAddr `uc  1 a 1 39 ]
+[s S24 . 1 `uc 1 nibbleL 1 0 :4:0 
+`uc 1 nibbleH 1 0 :4:4 
+]
+"293
+[s S27 . 1 `uc 1 val 1 0 :8:0 
+]
+[s S29 . 1 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+]
+[u S38 . 1 `S24 1 . 1 0 `S27 1 . 1 0 `S29 1 . 1 0 ]
+[s S1502 . 9 `VEuc 1 Addr 1 0 `VES38 1 P0IVal 1 1 `VES38 1 P0OVal 1 2 `VES38 1 P0Inv 1 3 `VES38 1 P0Dir 1 4 `VES38 1 P1IVal 1 5 `VES38 1 P1OVal 1 6 `VES38 1 P1Inv 1 7 `VES38 1 P1Dir 1 8 ]
+[v IOExpReadIVal@ioexp_inst ioexp_inst `*.39VES1502  1 p 2 36 ]
+[v IOExpReadIVal@portSel portSel `E16387  1 p 1 38 ]
+"323
+} 0
+"91 /home/dev-user/Projects/Personal/PIC/LibPeripherals.X/i2c.c
+[v _I2C1WrRd I2C1WrRd `(uc  1 e 1 0 ]
+{
+[v I2C1WrRd@wrCnt wrCnt `uc  1 a 1 wreg ]
+"105
+[v I2C1WrRd@read_count read_count `uc  1 a 1 35 ]
+"95
+[v I2C1WrRd@write_count write_count `uc  1 a 1 34 ]
+"91
+[v I2C1WrRd@wrCnt wrCnt `uc  1 a 1 wreg ]
+[v I2C1WrRd@rdCnt rdCnt `uc  1 p 1 31 ]
+[v I2C1WrRd@devAddr devAddr `uc  1 p 1 32 ]
+[v I2C1WrRd@wrCnt wrCnt `uc  1 a 1 33 ]
+"119
+} 0
+"4
+[v _I2C1Setup I2C1Setup `(E16287  1 e 1 0 ]
+{
+[v I2C1Setup@high_speed high_speed `a  1 a 1 wreg ]
+[v I2C1Setup@high_speed high_speed `a  1 a 1 wreg ]
+"6
+[v I2C1Setup@high_speed high_speed `a  1 a 1 58 ]
+"34
+} 0
+"272 /home/dev-user/Projects/Personal/PIC/LibPeripherals.X/timers.c
+[v _Tmr6Setup Tmr6Setup `(E16287  1 e 1 0 ]
+{
+"280
+[v Tmr6Setup@regVal regVal `ul  1 a 4 54 ]
+"279
+[v Tmr6Setup@prescalarVal prescalarVal `uc  1 a 1 53 ]
+"272
+[v Tmr6Setup@tmr_freq tmr_freq `ul  1 p 4 44 ]
+[v Tmr6Setup@use_int use_int `a  1 p 1 48 ]
+"299
+} 0
+"7 /opt/microchip/xc8/v2.30/pic/sources/c99/common/__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 39 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 43 ]
+"7
+[v ___lldiv@dividend dividend `ul  1 p 4 31 ]
+[v ___lldiv@divisor divisor `ul  1 p 4 35 ]
+"30
+} 0
+"301 /home/dev-user/Projects/Personal/PIC/LibPeripherals.X/timers.c
+[v _Tmr6Enable Tmr6Enable `(v  1 e 1 0 ]
+{
+"304
+} 0
+"46 /home/dev-user/Projects/Personal/PIC/LibPeripherals.X/i2c.c
+[v _I2C1Disable I2C1Disable `(E16287  1 e 1 0 ]
+{
+"51
+} 0
+"306 /home/dev-user/Projects/Personal/PIC/LibPeripherals.X/timers.c
+[v _Tmr6Disable Tmr6Disable `(v  1 e 1 0 ]
+{
+"309
+} 0
+"36 /home/dev-user/Projects/Personal/PIC/LibPeripherals.X/i2c.c
+[v _I2C1Enable I2C1Enable `(E16287  1 e 1 0 ]
+{
+"44
+} 0
+"3 /home/dev-user/Projects/Personal/PIC/StepperSystem_v2.X/System.c
+[v _SetupClk SetupClk `(v  1 e 1 0 ]
+{
+"14
+} 0
+"38 /home/dev-user/Projects/Personal/PIC/StepperSystem_v2.X/interrupts.c
+[v _TX_ISR TX_ISR `IIL(v  1 e 1 0 ]
+{
+"48
+} 0
+"50
+[v _RX_ISR RX_ISR `IIL(v  1 e 1 0 ]
+{
+"73
+[v RX_ISR@i i `uc  1 a 1 29 ]
+"84
+[v RX_ISR@i_652 i `uc  1 a 1 30 ]
+"67
+[v RX_ISR@rx_val rx_val `uc  1 a 1 28 ]
+"54
+[v RX_ISR@rx_or_error rx_or_error `a  1 a 1 27 ]
+"53
+[v RX_ISR@rx_frm_error rx_frm_error `a  1 a 1 26 ]
+"93
+} 0
+"95
+[v _DEFAULT_ISR DEFAULT_ISR `IIL(v  1 e 1 0 ]
+{
+"98
+} 0
+"17
+[v _TMR4_ISR TMR4_ISR `IIH(v  1 e 1 0 ]
+{
+"36
+} 0
+"191 /home/dev-user/Projects/Personal/PIC/LibOutputDevices.X/disp_7seg4dig.c
+[v _updateDisp updateDisp `(E16361  1 e 1 0 ]
+{
+"230
+} 0
+"7 /opt/microchip/xc8/v2.30/pic/sources/c99/common/llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+{
+"10
+[v ___llmod@counter counter `uc  1 a 1 8 ]
+"7
+[v ___llmod@dividend dividend `ul  1 p 4 0 ]
+[v ___llmod@divisor divisor `ul  1 p 4 4 ]
+"25
+} 0
+"30 /home/dev-user/Projects/Personal/PIC/LibOutputDevices.X/stepper.c
+[v _stepper0ISR stepper0ISR `IIH(v  1 e 1 0 ]
+{
+"48
+} 0
+"632
+[v i2_outputUpdate outputUpdate `(E16287  1 e 1 0 ]
+{
+"647
+} 0
+"102 /home/dev-user/Projects/Personal/PIC/LibMisc.X/IOExp_PCA9539A.c
+[v i2_IOExpUpdateOutPart IOExpUpdateOutPart `(E16287  1 e 1 0 ]
+{
+[s S24 . 1 `uc 1 nibbleL 1 0 :4:0 
+`uc 1 nibbleH 1 0 :4:4 
+]
+[s S27 . 1 `uc 1 val 1 0 :8:0 
+]
+[s S29 . 1 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+]
+[u S38 . 1 `S24 1 . 1 0 `S27 1 . 1 0 `S29 1 . 1 0 ]
+[s S1502 . 9 `VEuc 1 Addr 1 0 `VES38 1 P0IVal 1 1 `VES38 1 P0OVal 1 2 `VES38 1 P0Inv 1 3 `VES38 1 P0Dir 1 4 `VES38 1 P1IVal 1 5 `VES38 1 P1OVal 1 6 `VES38 1 P1Inv 1 7 `VES38 1 P1Dir 1 8 ]
+[v i2IOExpUpdateOutPart@ioexp_inst ioexp_inst `*.39VES1502  1 p 2 20 ]
+[v i2IOExpUpdateOutPart@set_oval set_oval `uc  1 p 1 22 ]
+[v i2IOExpUpdateOutPart@port_num port_num `uc  1 p 1 23 ]
+"112
+} 0
+"191
+[v i2_IOExpWriteVal IOExpWriteVal `(E16287  1 e 1 0 ]
+{
+"195
+[v i2IOExpWriteVal@datVals datVals `[2]uc  1 a 2 26 ]
+"193
+[v i2IOExpWriteVal@wrtCnt wrtCnt `uc  1 a 1 28 ]
+"194
+[v i2IOExpWriteVal@intAddr intAddr `uc  1 a 1 25 ]
+[s S24 . 1 `uc 1 nibbleL 1 0 :4:0 
+`uc 1 nibbleH 1 0 :4:4 
+]
+"191
+[s S27 . 1 `uc 1 val 1 0 :8:0 
+]
+[s S29 . 1 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+]
+[u S38 . 1 `S24 1 . 1 0 `S27 1 . 1 0 `S29 1 . 1 0 ]
+[s S1502 . 9 `VEuc 1 Addr 1 0 `VES38 1 P0IVal 1 1 `VES38 1 P0OVal 1 2 `VES38 1 P0Inv 1 3 `VES38 1 P0Dir 1 4 `VES38 1 P1IVal 1 5 `VES38 1 P1OVal 1 6 `VES38 1 P1Inv 1 7 `VES38 1 P1Dir 1 8 ]
+[v i2IOExpWriteVal@ioexp_inst ioexp_inst `*.39VES1502  1 p 2 17 ]
+[v i2IOExpWriteVal@portSel portSel `E16387  1 p 1 19 ]
+"226
+} 0
+"53 /home/dev-user/Projects/Personal/PIC/LibPeripherals.X/i2c.c
+[v i2_I2C1Write I2C1Write `(uc  1 e 1 0 ]
+{
+[v i2I2C1Write@byteCnt byteCnt `uc  1 a 1 wreg ]
+"57
+[v i2I2C1Write@write_count write_count `uc  1 a 1 24 ]
+"53
+[v i2I2C1Write@byteCnt byteCnt `uc  1 a 1 wreg ]
+[v i2I2C1Write@devAddr devAddr `uc  1 p 1 16 ]
+[v i2I2C1Write@byteCnt byteCnt `uc  1 a 1 23 ]
+"73
+} 0
+"243 /home/dev-user/Projects/Personal/PIC/LibOutputDevices.X/stepper.c
+[v _stepper1ISR stepper1ISR `IIH(v  1 e 1 0 ]
+{
+"261
+} 0
+"454
+[v _stepper2ISR stepper2ISR `IIH(v  1 e 1 0 ]
+{
+"474
+} 0

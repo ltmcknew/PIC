@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>com.microchip.mplab.nbide.embedded.makeproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/make-project/1">
+            <name>PicTest2</name>
+            <creation-uuid>2ffc23e5-a36d-4624-b5e1-fdd99aa96c3d</creation-uuid>
+            <make-project-type>0</make-project-type>
+            <c-extensions>c</c-extensions>
+            <cpp-extensions/>
+            <header-extensions>h</header-extensions>
+            <asminc-extensions/>
+            <sourceEncoding>ISO-8859-1</sourceEncoding>
+            <make-dep-projects>
+                <make-dep-project>/home/dev-user/Projects/Personal/PIC/LibPeripherals.X</make-dep-project>
+                <make-dep-project>/home/dev-user/Projects/Personal/PIC/LibSensors.X</make-dep-project>
+                <make-dep-project>/home/dev-user/Projects/Personal/PIC/LibOutputDevices.X</make-dep-project>
+            </make-dep-projects>
+            <sourceRootList>
+                <sourceRootElem>/home/dev-user/Projects/Personal/PIC/Peripherals</sourceRootElem>
+                <sourceRootElem>/home/dev-user/Projects/Personal/PIC/Sensors</sourceRootElem>
+                <sourceRootElem>/home/dev-user/Projects/Personal/PIC/OutputDevices</sourceRootElem>
+            </sourceRootList>
+            <confList>
+                <confElem>
+                    <name>default</name>
+                    <type>2</type>
+                </confElem>
+            </confList>
+            <formatting>
+                <project-formatting-style>false</project-formatting-style>
+            </formatting>
+        </data>
+    </configuration>
+</project>

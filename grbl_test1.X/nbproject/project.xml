@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>com.microchip.mplab.nbide.embedded.makeproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/make-project/1">
+            <name>grbl_test1</name>
+            <creation-uuid>041b1f09-7880-4f56-8587-eeadfa23fbcd</creation-uuid>
+            <make-project-type>0</make-project-type>
+            <c-extensions>c</c-extensions>
+            <cpp-extensions/>
+            <header-extensions>h</header-extensions>
+            <asminc-extensions/>
+            <sourceEncoding>ISO-8859-1</sourceEncoding>
+            <make-dep-projects/>
+            <sourceRootList>
+                <sourceRootElem>/home/dev-user/Projects/Personal/PIC/grbl_test1.X/cpu_map</sourceRootElem>
+                <sourceRootElem>/home/dev-user/Projects/Personal/PIC/grbl_test1.X/defaults</sourceRootElem>
+                <sourceRootElem>/home/dev-user/Projects/Personal/PIC/grbl_test1.X/grbl</sourceRootElem>
+            </sourceRootList>
+            <confList>
+                <confElem>
+                    <name>default</name>
+                    <type>2</type>
+                </confElem>
+            </confList>
+            <formatting>
+                <project-formatting-style>false</project-formatting-style>
+            </formatting>
+        </data>
+    </configuration>
+</project>
