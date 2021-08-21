@@ -1,1 +1,4 @@
 build/
+Makefile
+.generated_files/
+dist/
